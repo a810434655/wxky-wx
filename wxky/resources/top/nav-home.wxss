@@ -1,0 +1,82 @@
+
+/* 下 */
+.back-sanjiao-xia{
+	width:0;
+  height:0;
+	border-right:5px solid transparent;
+	border-left:5px solid transparent;
+	border-top:5px solid #1f2533;
+}
+/* 上
+.kailong{
+  width:0;
+  height:0;
+  border-top:50px solid transparent;
+  border-bottom:50px solid transparent;
+  border-right:50px solid red;
+}
+/* 左边 */
+/* .kailong{
+  width:0;
+  height:0;
+  border-top:50px solid transparent;
+  border-bottom:50px solid transparent;
+  border-right:50px solid red;
+} */
+/* 右边 */
+/* .kailong{
+  width:0;
+  height:0;
+  border-top:50px solid transparent;
+  border-bottom:50px solid transparent;
+  border-right:50px solid red;
+} */
+
+.index-sanjiao{
+  height: 100%;
+  margin-left: 10rpx; 
+}
+.navbar{
+  position: relative
+ }
+ .back-icon, .home-icon{
+  
+  height: 100%;
+  position: absolute; 
+  transform: translateY(-50%); 
+  top: 50%; 
+  display: flex;
+  /* font-family: SourceHanSansCN-Bold; */
+  font-family: SourceHanSansCN-Medium;
+	font-size: 36rpx; 
+	font-weight: bolder;
+	font-stretch: normal;
+	line-height:e 30rpx;
+	letter-spacing: 0rpx;
+	color: #1f2533;
+  }
+ .back-icon{ 
+    left: 16px;
+    width: 80px;
+ }
+ .home-icon{ 
+  left: 44px
+ }
+ .back-icon image{ 
+  width: 28px; 
+  height: 28px; 
+  margin: auto;
+ }
+ .home-icon image{ 
+  width: 20px; 
+  height: 20px; 
+  margin: auto;
+ }
+ .nav-title, .nav-icon{ 
+  position: absolute; 
+  transform: translate(-50%, -50%); 
+  left: 50%; 
+  top: 50%; 
+  font-size: 0; 
+  font-weight: bold;
+ }

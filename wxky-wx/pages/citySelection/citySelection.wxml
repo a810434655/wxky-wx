@@ -1,0 +1,102 @@
+<!--pages/citySelection/citySelection.wxml-->
+<view class="container ovf">
+  <i-col span="24">
+
+   <i-col span="22" offset="1">
+      <view class="citySelection-current">
+          当前定位
+      </view>
+   </i-col>
+
+   <i-col span="22" offset="1">
+       <i-col span="6"> 
+       <view class="circle-1">
+          贵阳
+       </view>
+      </i-col>
+   </i-col>
+
+   <i-col span="22" offset="1">
+      <view class="citySelection-current margin">
+          最近浏览
+      </view>
+   </i-col>
+
+    <i-col span="22" offset="1"> 
+      <view class="flex-1">
+        <view class="circle-2">
+            贵阳
+        </view>
+        <view class="circle-2">
+            遵义
+        </view>
+        <view class="circle-2">
+            湄潭
+        </view>
+        <view class="circle-2">
+            大阪
+        </view>
+         <view class="circle-2">
+            大阪
+        </view>
+         <view class="circle-2">
+            大阪
+        </view>
+         <view class="circle-2">
+            大阪
+        </view>
+         <view class="circle-2">
+            大阪
+        </view>
+      </view> 
+   </i-col>
+    
+    <i-col span="24">
+
+      <view class="city-content">
+         <i-col span="4">
+            <view class="city-left">
+                <scroll-view 
+                scroll-y="true" 
+                style="height: 800rpx;" >
+                  <i-col span="24">
+                     <view class="city-list" wx:for="{{province}}">
+                        <view class="{{item.id == focus?'city-left-border':'city-left-back'}}">
+                         {{item.name}}
+                        </view>
+                     </view>
+                  </i-col> 
+                </scroll-view>
+            </view>
+         </i-col>
+
+         <i-col span="20">
+
+            <view class="city-right">
+               <i-col span="24">
+                 <view class="city-right-1">
+                   <view class="city-right-1-text">
+                   贵州
+                   </view>
+                   <view class="city-right-2-text">
+                     17个目的地 
+                   </view>
+                 </view>
+               </i-col>
+
+               <i-col span="24">
+                 <view class="town-right-2">
+                     <view wx:for="{{town}}">
+                       {{item.name}}
+                     </view>
+                 </view>
+               </i-col>
+
+            </view> 
+
+         </i-col>
+      </view>
+    </i-col>
+
+  </i-col>
+</view>

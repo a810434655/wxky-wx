@@ -1,0 +1,119 @@
+<view>
+  <nav-home bindtap="selection"></nav-home>
+
+  <i-col span="22" offset="1">
+     <view class="index-search">
+       <input value="{{search}}" placeholder="九月九日去哪"></input>
+     </view>
+  </i-col>
+  
+  <i-col span="22" offset="1">
+     <swiper autoplay="false" bindchange="current" interval="5000" duration="500" style='height:375rpx;margin-top:20rpx;' circular='true'>
+      <block wx:for="{{banner}}" wx:key="key">
+        <swiper-item  class="banner-item">
+          <image mode='aspectFill' style='width:100%;height:100%;border-radius:10rpx;' src="{{item.img}}" data-item="{{item}}" bindtap='openBanner'></image>
+        </swiper-item>
+      </block>
+      </swiper>
+  </i-col>
+
+  <i-col span="22" offset="1">
+     <view class="banner-point" style="width:{{height}}rpx !important;">
+        <view wx:for="{{banner}}" class="{{curr==item.id?'banner-point-1':'banner-point-2'}} margin-r" data-id="{{item.id}}" ></view>
+     </view>
+  </i-col>
+   
+  <i-col span="22" offset="1">
+     <view class="index-selection">
+      <view class="index-selection-flex">
+         <image src="/resources/image/banner1.jpg"></image>
+         <view>康养游</view>
+      </view>
+      <view class="index-selection-flex">
+         <image src="/resources/image/banner1.jpg"></image>
+         <view>康养游</view>
+      </view>
+      <view class="index-selection-flex">
+         <image src="/resources/image/banner1.jpg"></image>
+         <view>康养游</view>
+      </view>
+     </view>
+  </i-col>
+
+  
+  <i-col span="22" offset="1">
+    <view class="inedx-stock">
+      <i-col span="10">
+       <view class="index-stock-1">特惠精选</view>
+      </i-col>
+      <i-col span="14">
+       <view class="index-stock-2">查看更多</view>
+      </i-col>
+    </view>
+  </i-col>
+  
+  <i-col span="22" offset="1">
+    <view class="inedx-stock-view">
+       <i-col span="12">
+
+         <view class="index-stock-view-1">
+          <i-col span="22" offset="1">
+            <view class="index-stock-view-h1">
+              正在疯抢
+            </view>
+            <view class="index-stock-view-time">
+              <view class="index-stock-view-time-1">
+                00
+              </view>
+               <view class="index-stock-view-time-2">:</view>
+              <view class="index-stock-view-time-1">
+                00
+              </view >
+                <view class="index-stock-view-time-2">:</view>
+              <view class="index-stock-view-time-1">
+                00
+              </view>
+            </view>
+          </i-col>
+          <view class="index-stock-view-img">
+            <image src="/resources/image/banner1.jpg"></image>
+          </view>
+         </view>
+        
+       
+       </i-col>
+       <i-col span="12">
+          <view class="index-stock-view-2">
+            <i-col span="22" offset="1">
+              <view class="index-stock-view-h1">
+                即将开始
+              </view>
+              <view class="index-stock-view-time-date">
+                <view>
+                  4月22日 开始
+                </view>
+              </view>
+            </i-col>
+            <view class="index-stock-view-img">
+              <image src="/resources/image/banner1.jpg"></image>
+            </view>
+          </view>
+       </i-col>
+       
+    </view>
+     
+  </i-col>
+  
+  <i-col span="22" offset="1">
+    <view class="index-strategy">
+       
+    
+    </view>
+  </i-col>
+  
+
+
+
+</view>
+
+<!-- <i-col></i-col> -->

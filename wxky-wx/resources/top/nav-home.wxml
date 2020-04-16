@@ -1,0 +1,17 @@
+<view class='nav' style='height: {{status + navHeight}}px'> 
+  <view class='status' style='height: {{status}}px;{{containerStyle}}'></view>   
+   <view class='navbar' style='height:{{navHeight}}px;{{containerStyle}}'> 
+    <view class='back-icon' bindtap='back' style="line-height:{{navHeight}}px;" bindtap="">
+        <text>贵州</text>
+        <view class="index-sanjiao">
+           <view class="back-sanjiao-xia" style="margin-top:{{navHeight/2-2}}px;"></view>
+        </view>
+    </view> 
+    <!-- <view class='nav-icon'>  
+          <image src='../../resources/image/back.jpg' style='{{iconStyle}}'></image> 
+    </view> -->
+  <view class='nav-title'>
+      <text style='{{textStyle}}'>{{titleText}}</text>
+  </view>
+ </view>
+ </view>
